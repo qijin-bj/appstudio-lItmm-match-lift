@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-axhy
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/qijing/ex-registry-bzpb-tenant/appstudio/dc-metro-map-axhy@sha256:bea2b2b95591fd735602919e54d1edbf3eaa0b94bcdf39050b772f87a0353712
+        name: my-nodejs
+        resources: {}
+status: {}
